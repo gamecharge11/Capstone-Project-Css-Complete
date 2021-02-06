@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+#nav {
+    transition: 0.7s linear;
+    opacity: 0;
+    width: 0px;
+    height: 100vh;
+    background: #696969;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    color: white;
+    z-index: 10;
+    text-align: center;
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#openn {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    z-index: 99;
+    background: black;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    #nav p a {
+        font-size: 3em;
+        cursor: pointer;
+        transition: 0.5s;
+        font-family: 'Russo one';
+        white-space: no-wrap;
+        color: white;
+        text-decoration: none;
+    }
+
+        #nav p a:hover {
+            color: black;
+        }
+
+*::selection {
+    background: black;
+    color: white;
+}
+
+#nav h1 {
+    font-size: 4em;
+    font-family: 'Russo one';
+    white-space: no-wrap;
+}
+
+#nav p {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.line {
+    width: 30%;
+    height: 5px;
+    background: white;
+    margin: 5px;
+    margin-left: 35%;
+}
+
+#nav button {
+    border: none;
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: black;
+    float: right;
+}
+
+
+h1 {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-siZE: 3rem;
+}
+body {
+    font-family: sans-serif;
+}
+h2 {
+    font-weight: 500;
+    line-height: 50px;
+}
+body {
+    background-color: #333333;
+    font-family: sans-serif;
+    color: white;
+}
+a {
+    color: white;
+}
+footer {
+    background-color: white;
+    width: 100vw;
+    height: 15vh;
+    color: black;
+    display: flex;
+
+}
+footer a {
+    color: black;
+}
+footer p {
+    margin-left:50%;
+    margin-top: 50px; 
+    font-size: 1.5em;
+}
+footer h1 {
+    margin-top: 25px;
+}
+@media only screen and (max-width: 1320px) {
+    footer p {
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width: 896px) {
+    footer p {
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width: 692px) {
+    footer p {
+        display: none;
+    }
+    footer h1 {
+        display: block;
+        margin: auto;
+    }
+}
+.quiz {
+    font-size: 2em;
+}
+@media only screen and (max-width: 500px) {
+    .b {
+        font-size: 1.5em;
+    }
+}
